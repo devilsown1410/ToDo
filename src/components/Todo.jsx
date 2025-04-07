@@ -16,7 +16,7 @@ const Todo = ({ id, task, isCompleted, onDelete, onEdit, onComplete }) => {
                 className="button"
                 onClick={() => onComplete(id)}
                 title="Mark as Complete"
-                disabled={isCompleted || isEditing}
+                disabled={ isEditing}
             >
                 {isCompleted ? '✔️' : '⬜'}
             </button>
